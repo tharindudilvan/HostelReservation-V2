@@ -1,0 +1,120 @@
+c:\users\it-lab 1\documents\visual studio 2015\Projects\nie\nie\bin\roslyn\csc.exe
+c:\users\it-lab 1\documents\visual studio 2015\Projects\nie\nie\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\it-lab 1\documents\visual studio 2015\Projects\nie\nie\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\it-lab 1\documents\visual studio 2015\Projects\nie\nie\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\it-lab 1\documents\visual studio 2015\Projects\nie\nie\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\it-lab 1\documents\visual studio 2015\Projects\nie\nie\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\it-lab 1\documents\visual studio 2015\Projects\nie\nie\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\it-lab 1\documents\visual studio 2015\Projects\nie\nie\bin\roslyn\System.Collections.Immutable.dll
+c:\users\it-lab 1\documents\visual studio 2015\Projects\nie\nie\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\it-lab 1\documents\visual studio 2015\Projects\nie\nie\bin\roslyn\vbc.exe
+c:\users\it-lab 1\documents\visual studio 2015\Projects\nie\nie\bin\roslyn\VBCSCompiler.exe
+c:\users\it-lab 1\documents\visual studio 2015\Projects\nie\nie\bin\roslyn\VBCSCompiler.exe.config
+c:\users\it-lab 1\documents\visual studio 2015\Projects\nie\nie\bin\nie.dll.config
+c:\users\it-lab 1\documents\visual studio 2015\Projects\nie\nie\bin\nie.dll
+c:\users\it-lab 1\documents\visual studio 2015\Projects\nie\nie\bin\nie.pdb
+c:\users\it-lab 1\documents\visual studio 2015\Projects\nie\nie\bin\nie.xml
+c:\users\it-lab 1\documents\visual studio 2015\Projects\nie\nie\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\it-lab 1\documents\visual studio 2015\Projects\nie\nie\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\it-lab 1\documents\visual studio 2015\Projects\nie\nie\obj\Debug\nie.vbprojResolveAssemblyReference.cache
+c:\users\it-lab 1\documents\visual studio 2015\Projects\nie\nie\obj\Debug\nie.Resources.resources
+c:\users\it-lab 1\documents\visual studio 2015\Projects\nie\nie\obj\Debug\nie.vbproj.GenerateResource.Cache
+c:\users\it-lab 1\documents\visual studio 2015\Projects\nie\nie\obj\Debug\nie.dll
+c:\users\it-lab 1\documents\visual studio 2015\Projects\nie\nie\obj\Debug\nie.xml
+c:\users\it-lab 1\documents\visual studio 2015\Projects\nie\nie\obj\Debug\nie.pdb
+D:\github\nie\nie\bin\roslyn\csc.exe
+D:\github\nie\nie\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\github\nie\nie\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\github\nie\nie\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\github\nie\nie\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\github\nie\nie\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\github\nie\nie\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\github\nie\nie\bin\roslyn\System.Collections.Immutable.dll
+D:\github\nie\nie\bin\roslyn\System.Reflection.Metadata.dll
+D:\github\nie\nie\bin\roslyn\vbc.exe
+D:\github\nie\nie\bin\roslyn\VBCSCompiler.exe
+D:\github\nie\nie\bin\roslyn\VBCSCompiler.exe.config
+D:\github\nie\nie\bin\nie.dll.config
+D:\github\nie\nie\bin\nie.dll
+D:\github\nie\nie\bin\nie.pdb
+D:\github\nie\nie\bin\nie.xml
+D:\github\nie\nie\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\github\nie\nie\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\github\nie\nie\obj\Debug\nie.vbprojResolveAssemblyReference.cache
+D:\github\nie\nie\obj\Debug\nie.Resources.resources
+D:\github\nie\nie\obj\Debug\nie.vbproj.GenerateResource.Cache
+D:\github\nie\nie\obj\Debug\nie.dll
+D:\github\nie\nie\obj\Debug\nie.xml
+D:\github\nie\nie\obj\Debug\nie.pdb
+D:\github\NieHostelReservation\nie\nie\bin\roslyn\csc.exe
+D:\github\NieHostelReservation\nie\nie\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\github\NieHostelReservation\nie\nie\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\github\NieHostelReservation\nie\nie\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\github\NieHostelReservation\nie\nie\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\github\NieHostelReservation\nie\nie\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\github\NieHostelReservation\nie\nie\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\github\NieHostelReservation\nie\nie\bin\roslyn\System.Collections.Immutable.dll
+D:\github\NieHostelReservation\nie\nie\bin\roslyn\System.Reflection.Metadata.dll
+D:\github\NieHostelReservation\nie\nie\bin\roslyn\vbc.exe
+D:\github\NieHostelReservation\nie\nie\bin\roslyn\VBCSCompiler.exe
+D:\github\NieHostelReservation\nie\nie\bin\roslyn\VBCSCompiler.exe.config
+D:\github\NieHostelReservation\nie\nie\bin\nie.dll.config
+D:\github\NieHostelReservation\nie\nie\bin\nie.dll
+D:\github\NieHostelReservation\nie\nie\bin\nie.pdb
+D:\github\NieHostelReservation\nie\nie\bin\nie.xml
+D:\github\NieHostelReservation\nie\nie\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\github\NieHostelReservation\nie\nie\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\github\NieHostelReservation\nie\nie\obj\Debug\nie.vbprojResolveAssemblyReference.cache
+D:\github\NieHostelReservation\nie\nie\obj\Debug\nie.Resources.resources
+D:\github\NieHostelReservation\nie\nie\obj\Debug\nie.vbproj.GenerateResource.Cache
+D:\github\NieHostelReservation\nie\nie\obj\Debug\nie.dll
+D:\github\NieHostelReservation\nie\nie\obj\Debug\nie.xml
+D:\github\NieHostelReservation\nie\nie\obj\Debug\nie.pdb
+C:\Users\IT-LAB 1\Desktop\NieHostelReservation\nie\nie\bin\roslyn\csc.exe
+C:\Users\IT-LAB 1\Desktop\NieHostelReservation\nie\nie\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\IT-LAB 1\Desktop\NieHostelReservation\nie\nie\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\IT-LAB 1\Desktop\NieHostelReservation\nie\nie\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\IT-LAB 1\Desktop\NieHostelReservation\nie\nie\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\IT-LAB 1\Desktop\NieHostelReservation\nie\nie\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\IT-LAB 1\Desktop\NieHostelReservation\nie\nie\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\IT-LAB 1\Desktop\NieHostelReservation\nie\nie\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\IT-LAB 1\Desktop\NieHostelReservation\nie\nie\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\IT-LAB 1\Desktop\NieHostelReservation\nie\nie\bin\roslyn\vbc.exe
+C:\Users\IT-LAB 1\Desktop\NieHostelReservation\nie\nie\bin\roslyn\VBCSCompiler.exe
+C:\Users\IT-LAB 1\Desktop\NieHostelReservation\nie\nie\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\IT-LAB 1\Desktop\NieHostelReservation\nie\nie\bin\nie.dll.config
+C:\Users\IT-LAB 1\Desktop\NieHostelReservation\nie\nie\bin\nie.dll
+C:\Users\IT-LAB 1\Desktop\NieHostelReservation\nie\nie\bin\nie.pdb
+C:\Users\IT-LAB 1\Desktop\NieHostelReservation\nie\nie\bin\nie.xml
+C:\Users\IT-LAB 1\Desktop\NieHostelReservation\nie\nie\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\IT-LAB 1\Desktop\NieHostelReservation\nie\nie\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\IT-LAB 1\Desktop\NieHostelReservation\nie\nie\obj\Debug\nie.vbprojResolveAssemblyReference.cache
+C:\Users\IT-LAB 1\Desktop\NieHostelReservation\nie\nie\obj\Debug\nie.Resources.resources
+C:\Users\IT-LAB 1\Desktop\NieHostelReservation\nie\nie\obj\Debug\nie.vbproj.GenerateResource.Cache
+C:\Users\IT-LAB 1\Desktop\NieHostelReservation\nie\nie\obj\Debug\nie.dll
+C:\Users\IT-LAB 1\Desktop\NieHostelReservation\nie\nie\obj\Debug\nie.xml
+C:\Users\IT-LAB 1\Desktop\NieHostelReservation\nie\nie\obj\Debug\nie.pdb
+E:\industrial Training\HostelReservaton\NieHostelReservation\nie\nie\bin\roslyn\csc.exe
+E:\industrial Training\HostelReservaton\NieHostelReservation\nie\nie\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\industrial Training\HostelReservaton\NieHostelReservation\nie\nie\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\industrial Training\HostelReservaton\NieHostelReservation\nie\nie\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\industrial Training\HostelReservaton\NieHostelReservation\nie\nie\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\industrial Training\HostelReservaton\NieHostelReservation\nie\nie\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\industrial Training\HostelReservaton\NieHostelReservation\nie\nie\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\industrial Training\HostelReservaton\NieHostelReservation\nie\nie\bin\roslyn\System.Collections.Immutable.dll
+E:\industrial Training\HostelReservaton\NieHostelReservation\nie\nie\bin\roslyn\System.Reflection.Metadata.dll
+E:\industrial Training\HostelReservaton\NieHostelReservation\nie\nie\bin\roslyn\vbc.exe
+E:\industrial Training\HostelReservaton\NieHostelReservation\nie\nie\bin\roslyn\VBCSCompiler.exe
+E:\industrial Training\HostelReservaton\NieHostelReservation\nie\nie\bin\roslyn\VBCSCompiler.exe.config
+E:\industrial Training\HostelReservaton\NieHostelReservation\nie\nie\bin\nie.dll.config
+E:\industrial Training\HostelReservaton\NieHostelReservation\nie\nie\bin\nie.dll
+E:\industrial Training\HostelReservaton\NieHostelReservation\nie\nie\bin\nie.pdb
+E:\industrial Training\HostelReservaton\NieHostelReservation\nie\nie\bin\nie.xml
+E:\industrial Training\HostelReservaton\NieHostelReservation\nie\nie\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\industrial Training\HostelReservaton\NieHostelReservation\nie\nie\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\industrial Training\HostelReservaton\NieHostelReservation\nie\nie\obj\Debug\nie.vbprojResolveAssemblyReference.cache
+E:\industrial Training\HostelReservaton\NieHostelReservation\nie\nie\obj\Debug\nie.Resources.resources
+E:\industrial Training\HostelReservaton\NieHostelReservation\nie\nie\obj\Debug\nie.vbproj.GenerateResource.Cache
+E:\industrial Training\HostelReservaton\NieHostelReservation\nie\nie\obj\Debug\nie.dll
+E:\industrial Training\HostelReservaton\NieHostelReservation\nie\nie\obj\Debug\nie.xml
+E:\industrial Training\HostelReservaton\NieHostelReservation\nie\nie\obj\Debug\nie.pdb
