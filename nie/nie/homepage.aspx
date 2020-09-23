@@ -28,6 +28,90 @@
 }
     /*page footer*/
 </style>
+    <script type="text/javascript">
+        function addResrve() {
+
+           
+            var fromDate = Math.round((new Date(document.getElementById("checkInID").value).getTime() / 1000));
+            var toDate = Math.round((new Date(document.getElementById("checkOutID").value).getTime() / 1000));
+
+            //var gen = document.getElementById("gender").value;
+            if (fromDate <= toDate) {
+                var genValue;
+                if (document.getElementById("MaleRadio").checked) {
+                    genValue = document.getElementById("MaleRadio").value;
+
+                }
+                else if (document.getElementById("FemaleRadio").checked) {
+                    genValue = document.getElementById("FemaleRadio").value;
+
+                }
+                document.getElementById("availableRoomsId").style.display = "block"
+                PageMethods.AddReservation(fromDate, toDate, genValue, OnSuccess);
+
+                function OnSuccess(response, userContext, methodName) {
+                    document.getElementById("TextBox1").value = response[0];
+                    document.getElementById("TextBox2").value = response[1];
+                    document.getElementById("TextBox3").value = response[2];
+                }
+            }
+            else {
+                alert("Error");
+                document.getElementById("availableRoomsId").style.display = "none";
+            }
+        }
+
+        function passValueToBooking1() {
+            var startDate = Date.parse(document.getElementById("checkInID").value);
+            var endDate = Date.parse(document.getElementById("checkOutID").value);
+            var diff = Math.floor((endDate - startDate) / (1000 * 60 * 60 * 24));
+            diff = diff + 1;
+            //console.log(diff);
+
+            var noOfRooms = document.getElementById("TextBox1").value;
+            var noOfPerson = 1;
+            var Price = 300;
+            var additionalCharges = 0;
+            var totalPrice = Price * diff;
+
+            window.open('booking.aspx?noOfRooms=' + noOfRooms + '&noOfPerson=' + noOfPerson + '&Price=' + Price + '&diff=' + diff + '&additionalCharges=' + additionalCharges + '&totalPrice=' + totalPrice, '_self', 'location=no,resizable=no', true);
+
+        }
+        function passValueToBooking2() {
+            var startDate = Date.parse(document.getElementById("checkInID").value);
+            var endDate = Date.parse(document.getElementById("checkOutID").value);
+            var diff = Math.floor((endDate - startDate) / (1000 * 60 * 60 * 24));
+            diff = diff + 1;
+            //console.log(diff);
+
+            var noOfRooms = document.getElementById("TextBox2").value;
+            var noOfPerson = 1;
+            var Price = 300;
+            var additionalCharges = 0;
+            var totalPrice = Price * diff;
+
+            window.open('booking.aspx?noOfRooms=' + noOfRooms + '&noOfPerson=' + noOfPerson + '&Price=' + Price + '&diff=' + diff + '&additionalCharges=' + additionalCharges + '&totalPrice=' + totalPrice, '_self', 'location=no,resizable=no', true);
+
+        }
+        function passValueToBooking3() {
+            var startDate = Date.parse(document.getElementById("checkInID").value);
+            var endDate = Date.parse(document.getElementById("checkOutID").value);
+            var diff = Math.floor((endDate - startDate) / (1000 * 60 * 60 * 24));
+            diff = diff + 1;
+            //console.log(diff);
+
+            var noOfRooms = document.getElementById("TextBox3").value;
+            var noOfPerson = 1;
+            var Price = 150;
+            var additionalCharges = 0;
+            var totalPrice = Price * diff;
+
+            window.open('booking.aspx?noOfRooms=' + noOfRooms + '&noOfPerson=' + noOfPerson + '&Price=' + Price + '&diff=' + diff + '&additionalCharges=' + additionalCharges + '&totalPrice=' + totalPrice, '_self', 'location=no,resizable=no', true);
+
+        }
+
+
+</script>
 
 
    
@@ -35,6 +119,8 @@
 
 <body>
     <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true"
+            ></asp:ScriptManager>
         
 
         <!-- begin top Banner -->
@@ -167,7 +253,7 @@
     
   </ul>
   
-  <div class="tab-content" style="width:1092px;height:150px;background-color:#dededc">
+  <div class="tab-content" style="width:1092px;height:150px;background-color:#dededc" >
     <div id="home" class="tab-pane fade in active">
     <br/>
         
@@ -177,15 +263,15 @@
     	<input type="date" name="check-out" id="checkOutID"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         
         <label for="male">Male</label>
-        <asp:RadioButton ID="RadioButton1" GroupName="gender" runat="server" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" id="MaleRadio" name="genderName" value="1" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         
         <label for="female">Female</label>
-        <asp:RadioButton ID="RadioButton2" GroupName="gender" runat="server" />
+        <input type="radio" id="FemaleRadio" name="genderName" value="2" />
        <!-- <input type="radio" name="female"/> -->
         <br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         
-        <asp:Button ID="Button1" runat="server" Text="Submit" />
-    </div>
+        <input type="button" id="submitBtn" onclick="addResrve()" value="Search" />
+                </div>
     
     <div id="menu1" class="tab-pane fade">
     <br/>
@@ -210,13 +296,7 @@
         <!-- End of Check In and Check out search Bar -->
         <br />
         <!-- begin of available rooms tabs-->
-    <div class="container" >
-        <%--<ul class="nav nav-tabs">
-            <li class="active"><a data-toggle="tab" href="#Double_Room">Double Room</a></li>
-            <li><a data-toggle="tab" href="#Triple_Room">Triple Room</a></li>
-            <li><a data-toggle="tab" href="#Dormitory">Dormitory</a></li>
-
-        </ul>--%>
+    <div class="container" id ="availableRoomsId" hidden="hidden">
         <div class="tab-content" >
             <div id="Double_Room" class="tab-pane fade in active">
                 <div class="col-lg-4" style="padding-left:0px;" >
@@ -228,8 +308,9 @@
                         
                     
                         <asp:TextBox CssClass="center-block" ID="TextBox1" runat="server" Height="50px" Width="75px" ReadOnly="True" BorderColor="White"></asp:TextBox>
-                        <%--<button type="button" class="btn btn-info center-block"   style="margin-top:10px;">Book</button>--%>
-                        <asp:Button ID="Button3" CssClass="btn btn-info center-block" style="margin-top:10px;" runat="server" Text="Book" />
+                        
+<%--                        <asp:Button ID="Button3" CssClass="btn btn-info center-block" style="margin-top:10px;" runat="server" Text="Book" />--%>
+                        <input type="button" value="Book" id="book1" class="btn btn-info center-block" style="margin-top:10px;" onclick="passValueToBooking1()"/>
                     </div>
                    
                    
@@ -239,8 +320,8 @@
                         <h2 class="text-center">Triple Rooms</h2><br />
                         <h4 class="text-center">Available Rooms</h4>
                         <asp:TextBox CssClass="center-block" ID="TextBox2" runat="server" Height="50px" Width="75px" ReadOnly="True" BorderColor="White"></asp:TextBox>
-                        <%--<button type="button" class="btn btn-info center-block" style="margin-top:10px;">Book</button> --%>
-                        <asp:Button ID="Button4" runat="server" Text="Book" CssClass="btn btn-info center-block" style="margin-top:10px;"  />
+                        <input type="button" value="Book" id="book2" class="btn btn-info center-block" style="margin-top:10px;" onclick="passValueToBooking2()"/>
+<%--                        <asp:Button ID="Button4" runat="server" Text="Book" CssClass="btn btn-info center-block" style="margin-top:10px;"  />--%>
                     </div>
 
                 </div>
@@ -249,8 +330,9 @@
                         <h2 class="text-center">Dometry</h2><br />
                         <h4 class="text-center">Available Rooms</h4>
                         <asp:TextBox CssClass="center-block" ID="TextBox3" runat="server" Height="50px" Width="75px" ReadOnly="True" BorderColor="White"></asp:TextBox>
-                        <%--<button type="button" class="btn btn-info center-block" style="margin-top:10px;">Book</button>--%> 
-                        <asp:Button ID="Button5" runat="server" Text="Book" CssClass="btn btn-info center-block" style="margin-top:10px;" />
+                        <input type="button" value="Book" id="book3" class="btn btn-info center-block" style="margin-top:10px;" onclick="passValueToBooking3()"/>
+
+<%--                        <asp:Button ID="Button5" runat="server" Text="Book" CssClass="btn btn-info center-block" style="margin-top:10px;" />--%>
                     </div>
                 </div>
 

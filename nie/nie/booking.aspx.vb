@@ -2,6 +2,11 @@
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        bill_info_num_persons.Text = Request.QueryString("noOfPerson")
+        bill_info_price_per_room.Text = Request.QueryString("Price")
+        bill_info_number_of_days.Text = Request.QueryString("diff")
+        bill_info_additional_charges.Text = Request.QueryString("additionalCharges")
+        bill_info_total.Text = Request.QueryString("totalPrice")
 
     End Sub
 

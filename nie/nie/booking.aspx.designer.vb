@@ -113,13 +113,13 @@ Partial Public Class booking
     Protected WithEvents bill_info_additional_charges As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''TextBox1 control.
+    '''bill_info_total control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents TextBox1 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents bill_info_total As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
     '''CheckBox1 control.

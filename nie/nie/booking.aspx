@@ -239,7 +239,7 @@
         <tr style="height:60px";>
         <td><b>Total</b></td>
         <td>
-            <asp:TextBox ID="TextBox1" runat="server" ReadOnly="True"></asp:TextBox></td>
+            <asp:TextBox ID="bill_info_total" runat="server" ReadOnly="True"></asp:TextBox></td>
        
       </tr>
     
