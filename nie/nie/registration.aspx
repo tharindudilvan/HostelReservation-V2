@@ -11,6 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <style type="text/css">
         body {
@@ -54,7 +55,24 @@
         }
         /*page footer*/
     </style>
+    <script type="text/javascript">
 
+
+        function Redisplay() {
+            swal({
+                title: "Registration Successful",
+                text: "Check Your Email",
+                icon: "success",
+                button: "Ok",
+            }).then(function () {
+                window.location = "homepage.aspx";
+            });
+
+        }
+
+    </script>
+
+  
 </head>
 <body>
     <form id="form1" runat="server">
@@ -111,6 +129,7 @@
                         <h2>Registration for Hostals</h2>
                     </div>
                     <div id="reg_form_div1">
+                        
                         <asp:TextBox ID="full_name"     CssClass="textbox_style" runat="server" placeholder="Your Full Name"></asp:TextBox>
                         <asp:TextBox ID="nic_number"    CssClass="textbox_style" runat="server" placeholder="Your NIC Number (Old NIC with V or New NIC)"></asp:TextBox>
                         <asp:TextBox ID="email"         CssClass="textbox_style" runat="server" placeholder="Your E-mail" TextMode="Email"></asp:TextBox>

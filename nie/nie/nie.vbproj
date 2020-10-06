@@ -67,6 +67,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="UploadFile\" />
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -94,9 +95,10 @@
   <ItemGroup>
     <Content Include="about_us.aspx" />
     <Content Include="addingReservation.aspx" />
+    <Content Include="adminHome.aspx" />
+    <Content Include="adminPendingRequest.aspx" />
     <Content Include="booking.aspx" />
     <Content Include="contact.aspx" />
-    <Content Include="dashboard.aspx" />
     <Content Include="gallery.aspx" />
     <Content Include="homepage.aspx" />
     <Content Include="images\benches.jpg" />
@@ -119,6 +121,7 @@
     <Content Include="payment.aspx" />
     <Content Include="registration.aspx" />
     <Content Include="room_adding.aspx" />
+    <Content Include="testing.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -136,6 +139,27 @@
       <DependentUpon>addingReservation.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="admin.Master.designer.vb">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin.Master.vb">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminHome.aspx.designer.vb">
+      <DependentUpon>adminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminHome.aspx.vb">
+      <DependentUpon>adminHome.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="adminPendingRequest.aspx.designer.vb">
+      <DependentUpon>adminPendingRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminPendingRequest.aspx.vb">
+      <DependentUpon>adminPendingRequest.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="booking.aspx.designer.vb">
       <DependentUpon>booking.aspx</DependentUpon>
     </Compile>
@@ -148,13 +172,6 @@
     </Compile>
     <Compile Include="contact.aspx.vb">
       <DependentUpon>contact.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="dashboard.aspx.designer.vb">
-      <DependentUpon>dashboard.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="dashboard.aspx.vb">
-      <DependentUpon>dashboard.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="gallery.aspx.designer.vb">
@@ -218,6 +235,13 @@
       <DependentUpon>room_adding.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="testing.aspx.designer.vb">
+      <DependentUpon>testing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="testing.aspx.vb">
+      <DependentUpon>testing.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -228,6 +252,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin.Master" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

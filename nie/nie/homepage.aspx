@@ -62,25 +62,30 @@
         }
 
         function passValueToBooking1() {
-            var startDate = Date.parse(document.getElementById("checkInID").value);
-            var endDate = Date.parse(document.getElementById("checkOutID").value);
-            var diff = Math.floor((endDate - startDate) / (1000 * 60 * 60 * 24));
-            diff = diff + 1;
-            //console.log(diff);
+            //var startDate = Date.parse(document.getElementById("checkInID").value);
+            //var endDate = Date.parse(document.getElementById("checkOutID").value);
 
+            var startDate = parseInt(Date.parse(document.getElementById("checkInID").value) / 1000);
+            var endDate = parseInt(Date.parse(document.getElementById("checkOutID").value) / 1000);
+            var diff = Math.floor((endDate - startDate) / (60 * 60 * 24));
+            diff = diff + 1;
+            
             var noOfRooms = document.getElementById("TextBox1").value;
             var noOfPerson = 1;
             var Price = 300;
             var additionalCharges = 0;
             var totalPrice = Price * diff;
 
-            window.open('booking.aspx?noOfRooms=' + noOfRooms + '&noOfPerson=' + noOfPerson + '&Price=' + Price + '&diff=' + diff + '&additionalCharges=' + additionalCharges + '&totalPrice=' + totalPrice, '_self', 'location=no,resizable=no', true);
+
+            window.open('booking.aspx?noOfRooms=' + noOfRooms + '&noOfPerson=' + noOfPerson + '&Price=' + Price + '&diff=' + diff + '&additionalCharges=' + additionalCharges + '&totalPrice=' + totalPrice + '&fromDate=' + startDate + '&todate=' + endDate, '_self', 'location=no,resizable=no', true);
+
+
 
         }
         function passValueToBooking2() {
-            var startDate = Date.parse(document.getElementById("checkInID").value);
-            var endDate = Date.parse(document.getElementById("checkOutID").value);
-            var diff = Math.floor((endDate - startDate) / (1000 * 60 * 60 * 24));
+            var startDate = parseInt( Date.parse(document.getElementById("checkInID").value)/1000);
+            var endDate = parseInt( Date.parse(document.getElementById("checkOutID").value)/1000);
+            var diff = Math.floor((endDate - startDate) / (60 * 60 * 24));
             diff = diff + 1;
             //console.log(diff);
 
@@ -90,13 +95,13 @@
             var additionalCharges = 0;
             var totalPrice = Price * diff;
 
-            window.open('booking.aspx?noOfRooms=' + noOfRooms + '&noOfPerson=' + noOfPerson + '&Price=' + Price + '&diff=' + diff + '&additionalCharges=' + additionalCharges + '&totalPrice=' + totalPrice, '_self', 'location=no,resizable=no', true);
+            window.open('booking.aspx?noOfRooms=' + noOfRooms + '&noOfPerson=' + noOfPerson + '&Price=' + Price + '&diff=' + diff + '&additionalCharges=' + additionalCharges + '&totalPrice=' + totalPrice + '&fromDate=' + startDate + '&todate=' + endDate, '_self', 'location=no,resizable=no', true);
 
         }
         function passValueToBooking3() {
-            var startDate = Date.parse(document.getElementById("checkInID").value);
-            var endDate = Date.parse(document.getElementById("checkOutID").value);
-            var diff = Math.floor((endDate - startDate) / (1000 * 60 * 60 * 24));
+            var startDate = parseInt( Date.parse(document.getElementById("checkInID").value)/1000);
+            var endDate = parseInt( Date.parse(document.getElementById("checkOutID").value)/1000);
+            var diff = Math.floor((endDate - startDate) / (60 * 60 * 24));
             diff = diff + 1;
             //console.log(diff);
 
@@ -106,8 +111,7 @@
             var additionalCharges = 0;
             var totalPrice = Price * diff;
 
-            window.open('booking.aspx?noOfRooms=' + noOfRooms + '&noOfPerson=' + noOfPerson + '&Price=' + Price + '&diff=' + diff + '&additionalCharges=' + additionalCharges + '&totalPrice=' + totalPrice, '_self', 'location=no,resizable=no', true);
-
+            window.open('booking.aspx?noOfRooms=' + noOfRooms + '&noOfPerson=' + noOfPerson + '&Price=' + Price + '&diff=' + diff + '&additionalCharges=' + additionalCharges + '&totalPrice=' + totalPrice +'&fromDate='+startDate+'&todate='+endDate, '_self', 'location=no,resizable=no', true);
         }
 
 

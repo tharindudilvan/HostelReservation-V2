@@ -6,6 +6,23 @@
 <head runat="server">
     <title>Booking</title>
 
+    <script>
+        function passValueToregistration() {
+            var startDate = Date.parse(document.getElementById("checkInID").value);
+            var endDate = Date.parse(document.getElementById("checkOutID").value);
+            var diff = Math.floor((endDate - startDate) / (1000 * 60 * 60 * 24));
+            diff = diff + 1;
+            //console.log(diff);
+
+            var noOfRooms = document.getElementById("TextBox3").value;
+            var noOfPerson = 1;
+            var Price = 150;
+            var additionalCharges = 0;
+            var totalPrice = Price * diff;
+
+            window.open('booking.aspx?noOfRooms=' + noOfRooms + '&noOfPerson=' + noOfPerson + '&Price=' + Price + '&diff=' + diff + '&additionalCharges=' + additionalCharges + '&totalPrice=' + totalPrice + '&fromDate=' + startDate + '&todate=' + endDate, '_self', 'location=no,resizable=no', true);
+        }
+    </script>
 
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
