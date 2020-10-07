@@ -158,7 +158,7 @@
     </Compile>
     <Compile Include="adminPendingRequest.aspx.vb">
       <DependentUpon>adminPendingRequest.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="booking.aspx.designer.vb">
       <DependentUpon>booking.aspx</DependentUpon>
